@@ -1,0 +1,103 @@
+/* --- 1. GLOBALNA TIPOGRAFIJA --- */
+body,
+p,
+h1, h2, h3, h4, h5, h6,
+.navbar,
+.navbar-brand,
+.nav-link,
+.sidebar,
+.quarto-listing-category-title,
+.category,
+.quarto-post {
+  font-family: "Atkinson Hyperlegible", sans-serif !important;
+}
+
+/* --- 2. OSNOVNI OKVIR SEZNAMA --- */
+#listing-listing,
+.quarto-listing,
+.quarto-listing-default {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* --- 3. POSAMEZNA KARTICA (POST) --- */
+.quarto-post {
+  display: block !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin-bottom: 0.6rem !important; /* <--- TUKAJ urejaš razmik med karticami! */
+  padding: 0.75rem !important;
+  background-color: #ffffff !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03) !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Odstranitev praznega prostora za sliko */
+.quarto-post .thumbnail {
+  display: none !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Notranji elementi sledijo normalnemu toku */
+.quarto-post .body,
+.quarto-post .metadata {
+  display: block !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  width: 100% !important;
+}
+
+/* Datum tik pod opisom */
+.quarto-post .metadata {
+  margin-top: 0.3rem !important;
+}
+
+/* --- 4. TIPOGRAFIJA ZNOTRAJ KARTICE --- */
+.quarto-post .listing-title,
+.quarto-post .listing-title a {
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  text-align: left !important;
+  display: block !important;
+  margin-bottom: 0.3rem !important;
+  text-decoration: none !important;
+}
+
+.quarto-post .listing-description {
+  font-size: 0.8rem !important;
+  text-align: justify !important;
+  margin-bottom: 0.3rem !important;
+}
+
+.quarto-post .listing-date {
+  color: #6c757d !important;
+  font-size: 0.8rem !important;
+  text-align: left !important;
+}
+
+/* Skrij avtorja */
+.quarto-post .listing-author {
+  display: none !important;
+}
+
+/* --- 5. OSTALI ELEMENTI SPLETNE STRANI --- */
+.navbar-brand {
+  font-size: var(--bs-nav-link-font-size) !important;
+  font-weight: 700 !important;
+  color: var(--bs-navbar-color) !important;
+  pointer-events: none !important;
+  cursor: default !important;
+}
+
+.about-image,
+img.about-image,
+.rounded-circle {
+  border-radius: 20% !important;
+}
